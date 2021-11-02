@@ -1,4 +1,15 @@
-nav.navbar {
+.navbar {
+  top: 0;
+  position: relative;
+
   height: 100px;
   margin-bottom: 20px;
+
+  width: 100%;
+}
+
+.navbar-brand img {
+  padding: 10px;
+  width: 155px;
+  height: 155px;
 }

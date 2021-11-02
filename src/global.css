@@ -11,10 +11,12 @@
 }
 
 button {
+  color: whitesmoke;
+  font-weight: 700;
   height: 35px;
   width: 100px;
 
-  background-color: #6cf160;
+  background-color: #2e5d78;
 
   border-radius: 5px;
   transition: 0.3s;

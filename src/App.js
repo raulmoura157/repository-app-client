@@ -1,13 +1,18 @@
-import Router from "./routes.js";
+import Routes from "./routes.js";
 import 'bootstrap/dist/css/bootstrap.min.css';
+
+import Navegation from './components/navbar/navbar';
+import Footer from './components/footer/footer';
 
 import './global.css'
 
 function App() {
   return (
-    <div className="App">
-      <Router/>
-    </div>
+    <main>
+      <Navegation/>
+      <Routes/>
+      <Footer/>
+   </main>
   );
 }
 

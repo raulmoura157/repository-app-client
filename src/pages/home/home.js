@@ -1,13 +1,26 @@
 import React from 'react';
-import Navegation from '../../components/navbar/navbar';
-import Footer from '../../components/footer/footer';
+
+
+import './styles.css'
 
 export default function Home(){
     return(
-        <div className="Wrapper">
-            <Navegation/>
-            <Footer/>
+        <div className="home">
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            <h1>Test</h1>
+            
+            
         </div>
-        
     )
 }

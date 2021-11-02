@@ -1,5 +1,5 @@
 .footer {
-  position: relative;
+  position: fixed;
   margin-top: 10px;
 
   background-image: linear-gradient(180deg, #d3d3d3, #c0c0c0, #a9a9a9);
@@ -9,6 +9,7 @@
 }
 
 .footer .container {
+  margin-top: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;

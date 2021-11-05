@@ -1,7 +1,7 @@
 import React from 'react'
 import {Switch, Route,BrowserRouter} from 'react-router-dom';
-import Home from './pages/home/home'
-import Login from './pages/login/login';
+import { Home, Login } from './pages';
+
 
 export default function Routes(){
     return(

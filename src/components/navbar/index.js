@@ -6,7 +6,7 @@ import {Navbar,Container} from 'react-bootstrap';
 
 import './styles.css'
 
-import Logo from '../../assets/Logo.png';
+import Logo from '../../images/Logo.png';
 
 export default function Navegation(){
 

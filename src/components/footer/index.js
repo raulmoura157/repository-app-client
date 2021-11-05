@@ -1,8 +1,8 @@
 import React from 'react';
 
 import './styles.css'
-import facebook from '../../assets/Facebook_icon.png'
-import instagram from '../../assets/Instagram_icon.png'
+import facebook from '../../images/Facebook_icon.png'
+import instagram from '../../images/Instagram_icon.png'
 
 export default function Footer(){
     return(
@@ -23,10 +23,10 @@ export default function Footer(){
                     <p>Contato - atendimento@bestspace.com.br</p>
                 </div>
                 <div className="column">
-                    <a href='#'>
+                    <a href='www.facebook.com'>
                         <img src={facebook} alt='facebook icon'/>
                     </a>
-                    <a href='#'>
+                    <a href='instagram.com'>
                         <img src={instagram} alt='facebook icon'/>
                     </a>
                 </div>

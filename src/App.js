@@ -1,19 +1,19 @@
 import Routes from "./routes.js";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Navegation from './components/navbar/navbar';
-import Footer from './components/footer/footer';
+import { Footer, Navbar } from './components';
 
 import './global.css'
 
 function App() {
   return (
-    <main>
-      <Navegation/>
+    <>
+      <Navbar/>
       <Routes/>
       <Footer/>
-   </main>
+    </>
   );
 }
 
 export default App;
+

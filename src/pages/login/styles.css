@@ -49,3 +49,16 @@ input:focus {
   outline: none;
   border-bottom: 2px solid #2e5d78;
 }
+
+.login .alert {
+  position: absolute;
+  top: 1rem;
+}
+
+.login .alert h4 {
+  font-size: 18px;
+}
+
+.login .alert p {
+  font-size: 14px;
+}

@@ -10,14 +10,13 @@ import Logo from '../../assets/Logo.png';
 
 export default function Navegation(){
 
-    const [history,setHistory] = useState('');
+    const [location,setLocation] = useState('');
 
     useEffect(()=>{
-        const location  = window.location.pathname;
+        const getLocation  = window.location.pathname;
         
-        setHistory(location)
+        setLocation(getLocation)
 
-        console.log(location)
     })
 
     return(
@@ -26,7 +25,15 @@ export default function Navegation(){
                 <Navbar.Brand href="/">
                     <img src={Logo} alt='Best-Space'/>
                 </Navbar.Brand>
-                {history === "/"?<button type='submit'>Cadastrar-se</button>:null}
+                {location === "/"?
+                <div className='buttons'>
+                    <button type='submit' id="login">
+                        <a href="/login" alt="">Login</a>
+                    </button>
+                    <p>|</p>
+                    <button type='button'>Cadastrar-se</button>
+                </div>
+                :null}
             </Container>
       </Navbar>
     )

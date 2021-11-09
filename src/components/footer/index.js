@@ -22,7 +22,7 @@ export default function Footer(){
                     <p>Sede - Av Faria Lima, 504, São Paulo/SP</p>
                     <p>Contato - atendimento@bestspace.com.br</p>
                 </div>
-                <div className="column">
+                <div className="column social-media">
                     <a href='www.facebook.com'>
                         <img src={facebook} alt='facebook icon'/>
                     </a>

@@ -1,10 +1,14 @@
 import React from 'react';
 import { Box, Flex } from '@chakra-ui/react'
 import homeBackground from '../../images/home-background.jpg'
+import ThemeProvider from '../../style/chakra/theme';
+
 
 export default function Home(){
 
     return(
+        <ThemeProvider>
+
         <Box>
             <Flex align="center" justify="flex-start" p="0 50px" bgImage={homeBackground}>
                 <Box maxW="427px">
@@ -37,5 +41,6 @@ export default function Home(){
                 </Box>
             </Flex>
         </Box>
+        </ThemeProvider>
     )
 }

@@ -1,0 +1,83 @@
+.sup_background{
+    margin-left: 25vw;
+}
+
+.sup_block_header{
+    display: flex;
+}
+
+.search_Button{
+    width: 73px;
+    height: 34px;
+    border-radius: 10px 0 0 10px;
+    background-color:#657581;
+    filter: drop-shadow(1px 2px 2px black);
+    margin-right: 0;
+}
+
+.search_input{
+    width: 60vw;
+    height: 34px;
+    border-radius: 0px 10px 10px 0px;
+    filter: drop-shadow(1px 2px 2px);
+    margin-left: 0;
+    padding-left: 10px;
+}
+
+.sup_block:first-child{
+    margin-top: 70px;
+}
+
+.sup_list{
+    width: 75vw;
+    margin-left: 0;
+}
+
+.sup_block{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 32px;
+    height: 80px;
+    width: 66vw;
+    margin-right: 0;
+    background-color: #F9F9F9;
+    font-size: 0.8rem;
+}
+
+.blue_bar{
+    background-color: #4a9cd4;
+    width: 9px;
+    height: 80px;
+    align-self: flex-start;
+    margin-right: 20px;
+}
+
+.sup_block_atribute{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10vw;
+    width: 21.5vw;
+    padding: 0;
+}
+
+.sup_block_buttons_div{
+    display: flex;
+    align-self: center;
+}
+
+.sup_block_button{
+    margin-right: 16px;
+    width: 50px;
+    height: 36px;
+}
+
+@media only screen and (max-width: 1000px){
+    .sup_block{
+        height: 10vh;
+    }
+
+    .blue_bar{
+        height: 10vh;
+    }
+}

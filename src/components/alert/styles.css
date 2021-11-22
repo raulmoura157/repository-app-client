@@ -1,0 +1,12 @@
+.alert {
+  position: absolute;
+  top: 1rem;
+}
+
+.alert h4 {
+  font-size: 18px;
+}
+
+.alert p {
+  font-size: 14px;
+}

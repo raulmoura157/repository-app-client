@@ -31,7 +31,9 @@ export default function Navegation(){
                         <a href="/login" alt="">Login</a>
                     </button>
                     <p>|</p>
-                    <button type='button'>Cadastrar-se</button>
+                    <button type='button'>
+                        <a href="/signup" alt="">Cadastrar-se</a>
+                    </button>
                 </div>
                 :null}
             </Container>

@@ -28,21 +28,21 @@ export default function Home(){
                 <Box p= "35px 15px 0">
                     {<Box justify="center" p= "0 18px 0px"><img align="center" src={Vector} /></Box>}
                     <p align= "center"> 
-                        <b>Economia de<br /> Tempo</b>
+                        <b>Economia de Tempo</b>
                     </p>
                 </Box>
                 </Flex>
                 <Box p= "0px 40px 0" >
                     {<Box justify="center" p= "0 18px 0px"><img src={cert} align="center"/></Box>}
                     <p align= "center">
-                        <b>Relatórios <br />Inteligentes</b>
+                        <b>Relatórios Inteligentes</b>
                     </p>
                 </Box>
                 <Flex p="0px 190px">
                 <Box p= "0 15px 0px  " >
                     { <Box justify="center" p= "0 22px 0px"><img src={chave}/></Box>}
                     <p align= "center">
-                        <b>Manutenção que<br /> cabe no bolso</b>
+                        <b>Manutenção que cabe no bolso</b>
                     </p>
                 </Box>
                 </Flex>

@@ -31,8 +31,8 @@ export default function Footer(){
                     </a>
                 </div>
             </div>
-            <hr />
             <div className="container-copyright">
+                <hr />
                 <p>© Copyright 2021 - Todos os direitos reservados</p>
             </div>
         </div>

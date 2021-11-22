@@ -1,4 +1,6 @@
-import Footer from './Footer/index'
-import Navbar from './Navbar/index'
+import Footer from './footer'
+import Navbar from './navbar'
+import AlertCard from './alert'
 
-export { Footer, Navbar };
+
+export { Footer, Navbar,AlertCard};

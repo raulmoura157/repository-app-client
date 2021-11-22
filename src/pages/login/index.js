@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
-
-import {Alert} from 'react-bootstrap';
+import {AlertCard} from '../../components';
 
 import './styles.css';
 import {api} from '../../api';
@@ -12,15 +11,6 @@ export default function Login(){
 
     const [alertContext,setAlertContext] = useState({});
     const [show,setShow] = useState(false);
-    
-    const AlertBox = () => {return(
-        <Alert variant={alertContext.variant} show={show}>
-            <Alert.Heading>{alertContext.heading}</Alert.Heading>
-            <p>
-                {alertContext.body}
-            </p>
-        </Alert>
-    )}
 
     async function handleLogin(){
         const data = {
@@ -43,6 +33,7 @@ export default function Login(){
          });
 
          setShow(true);
+
         }
         catch(err){
             setAlertContext({
@@ -56,9 +47,11 @@ export default function Login(){
 
          setTimeout(()=>{
             setShow(false);      
-         },3000)
-    }
+         },1000)
 
+         //Redirect to home page
+    }
+    
     return(
         <div className="login">
             <div className="container">
@@ -80,7 +73,12 @@ export default function Login(){
                 </div>
                 <button type='button' onClick={handleLogin}>Entrar</button>
             </div>
-            <AlertBox/>
+            <AlertCard
+              variant={alertContext.variant}
+              show={show}
+              heading={alertContext.heading}
+              body={alertContext.body}
+            />
         </div>
     )
 }

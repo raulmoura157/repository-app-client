@@ -1,4 +1,4 @@
-.login {
+.signUp {
   display: flex;
   flex-direction: row;
 
@@ -6,11 +6,11 @@
   align-items: center;
 }
 
-.login .container {
+.signUp .container {
   display: flex;
   flex-direction: column;
 
-  height: 300px;
+  height: 500px;
   width: 600px;
 
   justify-content: center;
@@ -22,21 +22,21 @@
   margin-bottom: 100px;
 }
 
-.login .container .input-field {
+.signUp .container .input-field {
   display: flex;
   flex-direction: column;
 
   margin: 15px;
 }
 
-.login .container .input-field label {
+.signUp .container .input-field label {
   color: #66747f;
   font-weight: 600;
 
   margin-bottom: 5px;
 }
 
-.login .container .input-field input {
+.signUp .container .input-field input {
   width: 450px;
   height: 35px;
 
@@ -51,15 +51,15 @@ input:focus {
   border-bottom: 2px solid #2e5d78;
 }
 
-.login .alert {
+.signUp .alert {
   position: absolute;
   top: 1rem;
 }
 
-.login .alert h4 {
+.signUp .alert h4 {
   font-size: 18px;
 }
 
-.login .alert p {
+.signUp .alert p {
   font-size: 14px;
 }

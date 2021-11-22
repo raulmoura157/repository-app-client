@@ -33,5 +33,10 @@ a:focus,
 a:hover {
   text-decoration: none;
   -webkit-animation: none;
+  color: #fff;
+}
+
+button#login a:hover {
   color: #2e5d78;
+  opacity: 0.85;
 }

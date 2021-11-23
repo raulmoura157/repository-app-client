@@ -30,8 +30,8 @@
 
 .navbar .container .buttons p {
   font-size: 40px;
-  font-weight: 200;
-  color: #dfdede;
+  font-weight: 100;
+  color: rgb(84, 91, 97);
   height: 100%;
 }
 

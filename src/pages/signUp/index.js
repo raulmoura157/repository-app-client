@@ -7,7 +7,7 @@ import './styles.css'
 export default function SignUp(){
     const [name,setName] = useState('');
     const [email,setEmail] = useState('');
-    const [cnpj,setCNPJ] = useState('');
+    const [CNPJ,setCNPJ] = useState('');
     const [password,setPassword] = useState('');
 
     const history = useHistory();
@@ -17,8 +17,8 @@ export default function SignUp(){
         var data = {
             name,
             email,
-            cnpj,
-            password
+            password,
+            CNPJ
         }
 
         //Calling API
@@ -42,6 +42,7 @@ export default function SignUp(){
                     value={name}
                     onChange={e=>setName(e.target.value)}
                     placeholder="Insira seu nome..."
+                    required
                     />
                 </div>
                 <div className="input-field">
@@ -50,22 +51,25 @@ export default function SignUp(){
                     value={email}
                     onChange={e => setEmail(e.target.value)}
                         placeholder="Insira seu email..."
+                    required
                     />
                 </div>
                 <div className="input-field">
                     <label>CNPJ/CPF</label>
-                    <input type="email"
-                    value={cnpj}
+                    <input type="text"
+                    value={CNPJ}
                     onChange={e => setCNPJ(e.target.value)}
                         placeholder="Insira seu CNPJ..."
+                    required
                     />
                 </div>
                 <div className="input-field">
                     <label>Senha</label>
-                    <input type="email"
+                    <input type="password"
                     value={password}
                     onChange={e => setPassword(e.target.value)}
                         placeholder="Insira sua senha..."
+                    required
                     />
                 </div>
                 <button type='button' onClick={handleSignUp}>Cadastrar</button>

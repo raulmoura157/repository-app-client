@@ -1,16 +1,29 @@
-import React from 'react';
+import React,{useEffect,useState} from 'react';
 
 
 import {Brush} from '@material-ui/icons';
 import {AccountCircle} from '@material-ui/icons';
-import {api} from '../../api';
 
 
 import './styles.css'
 
 export default function Profile(){
 
+    const [name,setName] = useState('')
+    const [email,setEmail] = useState('')
+    const [CNPJ,setCNPJ] = useState('')
 
+    const userPhrase  = localStorage.getItem('user');
+
+    useEffect(()=>{
+
+        const user = JSON.parse(userPhrase);
+
+        setName(user.name)
+        setEmail(user.email)
+        setCNPJ(user.CNPJ)
+
+    },[])
     return(
         <div className="profile">
             <div className='aside-bar'>
@@ -22,21 +35,21 @@ export default function Profile(){
                 </div>
                 <div className='input-field'>
                     <label>Nome</label>
-                    <p>Joao Vitor Massuia Roberto</p>
+                    <p>{name}</p>
                     <button>
                         <Brush size={10}/>
                     </button>
                 </div>
                 <div className='input-field'>
                     <label>Email</label>
-                    <p>massuia1507@gmail.com</p>
+                    <p>{email}</p>
                     <button>
                         <Brush/>
                     </button>
                 </div>
                 <div className='input-field'>
                     <label>CNPJ</label>
-                    <p>129472637/0001</p>
+                    <p>{CNPJ}</p>
                     <button>
                         <Brush size={14}/>
                     </button>

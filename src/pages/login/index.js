@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {AlertCard} from '../../components';
+import { useHistory } from 'react-router-dom';
 
 import './styles.css';
 import {api} from '../../api';
@@ -11,6 +12,8 @@ export default function Login(){
 
     const [alertContext,setAlertContext] = useState({});
     const [show,setShow] = useState(false);
+
+    var history = useHistory();
 
     async function handleLogin(){
         const data = {
@@ -24,6 +27,7 @@ export default function Login(){
 
         //Setting JWT token into localStorage
         localStorage.setItem('token',authenticate.data.data);
+        localStorage.setItem('user',JSON.stringify(authenticate.data.user));
 
         //Showing message alert
         setAlertContext({
@@ -46,10 +50,12 @@ export default function Login(){
         }
 
          setTimeout(()=>{
-            setShow(false);      
-         },1000)
+            setShow(false);
+            
+            //Redirect to home page
+            history.push('/me');
 
-         //Redirect to home page
+         },2000)
     }
     
     return(

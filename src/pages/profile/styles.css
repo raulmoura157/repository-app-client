@@ -50,9 +50,7 @@ div .profile-data .input-field {
   transition: 600ms;
 }
 
-div .profile-data .input-field label,
-p,
-button {
+div .profile-data .input-field label {
   margin: 0px 10px 0px 10px;
 }
 div .profile-data .input-field button {
@@ -66,7 +64,7 @@ div .profile-data .input-field p {
   padding-top: 1rem;
 }
 
-div .input-field:hover {
+.profile div .input-field:hover {
   width: 62%;
   height: 40px;
 }

@@ -1,12 +1,12 @@
 import React from 'react';
 
 import './styles.css'
-import HomeIcon from '@mui/icons-material/Home'
-import AssignmentIcon from '@mui/icons-material/Assignment'
-import AccountBoxIcon from '@mui/icons-material/AccountBox'
-import AssessmentIcon from '@mui/icons-material/Assessment'
+import HomeIcon from '@material-ui/icons/Home'
+import AssignmentIcon from '@material-ui/icons/Assignment'
+import AccountBoxIcon from '@material-ui/icons/AccountBox'
+import AssessmentIcon from '@material-ui/icons/Assessment'
 
-export default function Side_Bar(props){
+export default function AsideBar(){
     return(
         <div className="side_bar_background">
            <a className='side-titles' href='/'>
@@ -17,7 +17,7 @@ export default function Side_Bar(props){
                <AssignmentIcon/>
                <p>Produtos</p>
            </a>
-           <a className='side-titles' href='/suppliers'>
+           <a className='side-titles' href='/'>
                <AccountBoxIcon/>
                <p>Fornecedores</p>
            </a>

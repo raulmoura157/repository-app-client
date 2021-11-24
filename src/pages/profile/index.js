@@ -3,7 +3,7 @@ import React,{useEffect,useState} from 'react';
 
 import {Brush} from '@material-ui/icons';
 import {AccountCircle} from '@material-ui/icons';
-
+import {AsideBar} from '../../components'
 
 import './styles.css'
 
@@ -26,8 +26,7 @@ export default function Profile(){
     },[])
     return(
         <div className="profile">
-            <div className='aside-bar'>
-            </div>
+            <AsideBar/>
             <div className="profile-data">
                 <h1>Perfil do Usuário</h1>
                 <div className="Avatar">

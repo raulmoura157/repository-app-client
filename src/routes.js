@@ -1,6 +1,6 @@
 import React from 'react'
 import {Switch, Route,BrowserRouter} from 'react-router-dom';
-import { Home, Login, SignUp, Profile, CreateProduct } from './pages';
+import { Home, Login, SignUp, Profile, CreateProduct, Supplier } from './pages';
 
 
 export default function Routes(){
@@ -12,6 +12,7 @@ export default function Routes(){
                 <Route path='/signup' component={SignUp}/>
                 <Route path='/me' component={Profile}/>
                 <Route path='/product/new' component={CreateProduct}/>  
+                <Route path='/supplier' component={Supplier}/>  
             </Switch>   
         </BrowserRouter>
     )

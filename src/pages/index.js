@@ -4,5 +4,7 @@ import SignUp from './signUp';
 import Profile from './profile';
 import CreateProduct from './createProduct';
 import Supplier from './suppliers/index.js';
+import Stock from './stock/index.js'
+import CreateStock from './createStock/index.js'
 
-export {Home, Login, SignUp, Profile,CreateProduct, Supplier};
+export {Home, Login, SignUp, Profile,CreateProduct, Supplier, Stock, CreateStock};

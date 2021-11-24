@@ -63,3 +63,8 @@ input:focus {
 .create-product .alert p {
   font-size: 14px;
 }
+
+.registerButton{
+  width: 354px;
+  height: 50px;
+}

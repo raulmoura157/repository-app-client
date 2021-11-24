@@ -4,9 +4,7 @@ div .suppliers {
   justify-content: space-between;
   align-items: center;
   position: relative;
-}
-
-div .sup_background {
+  margin-left: 20vw;
 }
 
 .sup_block_header {
@@ -29,10 +27,6 @@ div .sup_background {
   filter: drop-shadow(1px 2px 2px);
   /* margin-left: 0; */
   padding-left: 10px;
-}
-
-.sup_block:first-child {
-  /* margin-top: 70px; */
 }
 
 .sup_list {

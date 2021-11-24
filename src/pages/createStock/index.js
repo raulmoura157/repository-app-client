@@ -4,10 +4,10 @@ import { useHistory } from 'react-router';
 import {api} from '../../api';
 import './styles.css'
 
-export default function CreateProduct(){
+export default function CreateStock(){
     const history = useHistory();
 
-    async function handleCreateProduct(){
+    async function handleCreateStock(){
         //Clustering data in a object
         var data = {
              
@@ -26,10 +26,19 @@ export default function CreateProduct(){
     }
 
     return(
-        <div className="create-product">
+        <div className="create-stock">
             <div className="container">
                 <div className="input-field">
-                    <label>Nome</label>
+                    <label>Código do Produto</label>
+                    <input type="text" 
+                    value=''
+                    onChange=''
+                    placeholder="Insira o código do produto..."
+                    required
+                    />
+                </div>
+                <div className="input-field">
+                    <label>Nome do Produto</label>
                     <input type="text" 
                     value=''
                     onChange=''
@@ -38,31 +47,29 @@ export default function CreateProduct(){
                     />
                 </div>
                 <div className="input-field">
-                    <label>Descrição</label>
+                    <label>Descrição do Produto</label>
                     <input type="text" 
                     value=''
                     onChange=''
-                    placeholder="Insira descrição do produto..."
+                    placeholder="Insira a descrição do produto..."
                     required
                     />
                 </div>
                 <div className="input-field">
-                    <label>Preço de Venda</label>
-                    <input type="text" 
-                    value=''
-                    onChange=''
-                    placeholder="Insira o preço unitário de venda..."
+                    <label>Preço do Produto</label>
+                    <input type="text"
+                    placeholder="Insira o preço do produto..."
                     required
-                    />
+                    /> 
                 </div>
                 <div className="input-field">
-                    <label>Quantidade</label>
+                    <label>Quantidade do Produto</label>
                     <input type="text"
                     placeholder="Insira a quantidade de produto..."
                     required
-                    />
+                    /> 
                 </div>
-                <button className="registerButton" type='button' onClick={handleCreateProduct}>Cadastrar</button>
+                <button className="registerButton" type='button' onClick={()=>0}>Cadastrar</button>
             </div>
         </div>
     )
